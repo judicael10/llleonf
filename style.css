@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: none;
+
+}
+
+.acceuil{
+    background: #000;
+    color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+h1{
+    font-size: 100px;
+}
+
+.loader{
+    position: absolute;
+    width: 100%;
+    background: white;
+    color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lettre{
+    font-size: 60px;
+    color: black;
+    letter-spacing: 40px;
+    animation:fla 1.2s linear infinite ;
+
+
+}
+
+@keyframes fla {
+    0%{
+        color: yellow;
+        text-shadow:  0 0 7px yellow;
+    }
+    90%{
+        text-shadow: none;
+        color: black;
+    }
+
+    100%{
+        color: yellow;
+        text-shadow:  0 0 7px yellow;
+    }
+    
+}
+
+.fondu-out{
+    opacity: 0;
+    transition: opacity .2s ease-out;
+}
